@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => {
           speed: 450
         }}
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-          <img src={icon} alt={title} className=' w-16 h-16 object-contain' />
+          <img src={icon} alt={title} className='object-contain w-16 h-16 ' />
           <h3 className=' text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
@@ -43,10 +43,10 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className=' mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Highly skilled Full-Stack Engineer with 3+ years of experience building interactive web applications and 3D experiences. Proficient in JavaScript, TypeScript, React, Next.js, Node.js, and Three.js. Passionate about creating performant and visually stunning user interfaces. Eager to contribute to a team building innovative products.
+        Highly skilled Full-Stack Engineer with 4+ years of experience building interactive web applications and 3D experiences. Proficient in JavaScript, TypeScript, React, Next.js, Node.js, and Three.js. Passionate about creating performant and visually stunning user interfaces. Eager to contribute to a team building innovative products.
       </motion.p>
 
-      <div className=' mt-20 flex flex-wrap gap-10'>
+      <div className='flex flex-wrap gap-10 mt-20 '>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
